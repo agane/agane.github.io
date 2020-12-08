@@ -1,0 +1,416 @@
+/* GENERAL */
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-size: 100%;
+    font-style: normal;
+    font-family: trebuchet ms, sans-serif;
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* HEADER */
+
+#header {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1000px;
+    overflow: visible;
+    opacity: 0.65;
+    position: fixed;        /* menu stays fixed while scrolling */
+    float: left;
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#header table {
+    background: darkgrey;   /* darker gray than the rest of the page */
+    padding-top: 0;
+    padding-bottom: 2px;
+    width: 100%;
+}
+
+#header th {
+    width: 50%;
+}
+
+.header_separator {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 0;
+    margin-bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+}
+
+#header ul {
+    margin: 0 auto;
+    padding: 0;
+    overflow: visible;
+    float: right;
+    list-style-type: none;
+}
+
+#header li {
+    display: inline;
+}
+
+#header a {
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: 2em;
+}
+
+#header span {
+    font-size: 1.5em;
+    font-family: verdana;
+    font-weight: normal;
+    padding-left: 10px;
+    color: red;
+}
+
+#header img {           /* Profile image embeded in the menu bar */
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 0 1px lightgray;
+}
+
+/* CONTENT */
+
+#content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 3px;
+    padding-bottow: 3px;
+    background: #F4F4F4;	/* verylightgray */
+    min-height: 800px;
+    max-width: 1000px;
+    float: center;
+    text-align: center;
+}
+
+.separator {
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0;
+    width: 100%;
+}
+
+#section
+{
+    background: #F4F4F4;	/* verylightgray */
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+
+#section h1
+{
+    color: black;
+    display: block;
+    margin: 0
+    padding: 0
+    font-weight: bold;
+    font-size: 3em;
+}
+
+#section h2
+{
+    color: black
+    display: block;
+    margin: 0
+    padding: 0
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.mainimg {
+    width: 9.5em;
+    height: 9.5em;
+	margin-top: 8px;
+    margin-right: 0px;
+    border: 3px solid lightgray;
+    border-radius: 0%
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+/*******************************
+ *****  PROJECT PROPERTIES  *****
+ ********************************/
+#projects
+{
+    padding: 25px 0px;
+}
+#projects h2
+{
+    display: inline
+}
+#projects hr
+{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, white, #DDD, white);
+    clear: both;
+    margin: 55px 0px 25px 0px;
+}
+.project
+{
+    margin: 20px 25px;
+    clear: both;
+    min-height: 200px;
+}
+.project p
+{
+    padding: 6px 0px 0px 0px;
+    font-size: 1.3em;
+}
+/*******************************/
+/*******************************/
+/****  PUBS PROPERTIES   ******/
+/*******************************/
+/*******************************/
+#pubs {
+    background: #F4F4F4;	/* verylightgray */
+    width: 90%;
+    height: 100%;
+}
+
+#pubs h2 {
+    padding: 25px 0px;
+}
+
+ul {
+    padding: 0px 25px;
+    list-style-type: none;
+}
+li {
+    padding: 5px 0px;
+    transition: all;
+    list-style-type: none;
+}
+
+/***** LINKS *****/
+
+a {
+    text-decoration: none;
+    transition: .25s;
+}
+a:link    { color: #E24E42
+}
+a:visited { color: #E24E42
+}
+a:hover   { color: gray }
+a:active  { color: gray }
+.tooltip{
+    position: relative;
+    display: inline;
+}
+.tooltiplink {
+    transition: .2s;
+    color: #E24E42
+    ;
+}
+.tooltiplink: hover{
+    color: blue;
+    cursor: pointer;
+}
+.tooltiptext{
+    position: absolute;
+    display: none;
+    text-align: left;
+    left: 5px;
+    top: 35px;
+    white-space: nowrap;
+    background-color: pink;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #E24E42
+    ;
+    padding: 10px 10px;
+    border-radius: 10px 10px;
+    z-index: 1;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
+}
+.tooltiptext:: after, .tooltiptext:: before{
+    content: "";
+    position: absolute;
+    left: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 1;
+}
+.tooltiptext:: after{
+    top: -21px;
+    border-width: 12px;
+    border-color: transparent transparent pink transparent;
+}
+.tooltiptext:: before{
+    top: -24px;
+    border-width: 12px;
+    border-color: transparent transparent #E24E42
+    transparent;
+}
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/***** TIMELINE (see https://codyhouse.co/gem/vertical-timeline/) *****/
+
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to,
+   * and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Timeline block */
+#cd-timeline {
+  position: relative;
+  padding: 0.5em 0;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #d7e4ed;
+}
+.cd-timeline-block {
+  position: relative;
+  margin: -1em 0;
+}
+.cd-timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+
+/* Timeline big image */
+.cd-timeline-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+.cd-timeline-img img {
+  display: block;
+  width: 52px;
+  height: 52px;
+  position: relative;
+  left: 0%;
+  top: 0%;
+  border-radius: 50%;
+  margin-left: 4px;
+  margin-top: 4px;
+}
+.cd-timeline-img.cd-school {
+  background: lightgray;
+}
+.cd-timeline-img.cd-work {
+  background: lightgray;
+}
+
+/* Timeline small image */
+.cd-timeline-sm-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.cd-timeline-sm-img img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    border-radius: 50%;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+.cd-timeline-sm-img.cd-school {
+    background: lightgray;
+}
+.cd-timeline-sm-img.cd-work {
+    background: lightgray;
+}
+
+/* Timeline content */
+.cd-timeline-content {
+  position: relative;
+  margin-left: 40px;
+}
+.cd-timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
